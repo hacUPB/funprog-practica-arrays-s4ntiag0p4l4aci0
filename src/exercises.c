@@ -6,12 +6,25 @@
 
 int calcSum(int arr[], int n)
 {
-    // Escriba aquí su código
+    int sum = 0;
+    for(int i = 0; i < n; i++)
+    {sum = sum + arr[i];}
+
+    return sum;
 }
 
 int findMax(int arr[], int n)
 {
-    // Escriba aquí su código
+    int max = arr[0];
+    for(int i = 0; i < n; i++)
+    {
+        if(arr[i] > max)
+        {max = arr[i];}
+
+        return max;
+
+    }
+
 }
 
 float calcAverage(int arr[], int n)
@@ -31,7 +44,15 @@ int sumFirstLast(int arr[], int n)
 
 int findMin(int arr[], int n)
 {
-    // Escriba aquí su código
+    int min = arr[0];
+    for(int i = 0; i < n; i++)
+    {
+        if(arr[i] < min)
+        {min = arr[i];}
+
+        return min;
+
+    }
 }
 
 int subtractArraysSum(int a[], int b[], int n)
