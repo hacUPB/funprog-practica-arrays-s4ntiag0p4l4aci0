@@ -16,7 +16,7 @@ int calcSum(int arr[], int n)
 int findMax(int arr[], int n)
 {
     int max = arr[0];
-    for(int i = 1; i < n; i++)
+    for(int i = 0; i < n; i++)
     {
         if(arr[i] > max)
         {max = arr[i];}
@@ -30,24 +30,52 @@ int findMax(int arr[], int n)
 
 float calcAverage(int arr[], int n)
 {
-    // Escriba aquí su código
+    int  total = 0;
+    for(int i = 0; i < n; i++)
+    {
+        total = total + arr[n];
+
+    }
+
+    int average = total/n;
+
+    return average;
+    
 }
 
 int countEvens(int arr[], int n)
 {
-    // Escriba aquí su código
+    int evens = 0;
+   
+    for(int i = 0; i < n; i++)
+    {
+        if(arr[i] %2 == 0)
+        {evens ++;}
+
+        
+
+    }
+    return evens;
 }
 
 int sumFirstLast(int arr[], int n)
 {
-    // Escriba aquí su código
+    if(n!=0){
+    int first_last = arr[0] + arr[n-1];
+
+    return first_last;
+    }
+    
+    else {
+    printf("error");
+    return 0; }
 }
 
 int findMin(int arr[], int n)
 {
     int min = arr[0];
 
-    for(int i = 1; i < n; i++)
+    for(int i = 0; i < n; i++)
     {
         if(arr[i] < min)
         {min = arr[i];}
@@ -60,17 +88,49 @@ int findMin(int arr[], int n)
 
 int subtractArraysSum(int a[], int b[], int n)
 {
-    // Escriba aquí su código
+        int substract = 0;
+        int sum = 0;
+    for (int i = 0; i < n; i++) {
+        substract = a[i] - b[i];
+        sum = sum + substract;
+
+    }
+
+    return sum;
 }
 
 int mergeArraysSum(int a[], int n1, int b[], int n2)
 {
-    // Escriba aquí su código
+    
+    int c[n1 + n2];
+    
+    for (int i = 0; i < n1; i++) {
+        c[i] = a[i];
+    }
+
+    for (int i = 0; i < n2; i++) {
+        c[n1 + i] = b[i];
+    }
+
+    int sum = 0;
+    for (int i = 0; i < n1 + n2; i++) {
+        sum = sum + c[i];
+    }
+
+    return sum;
 }
 
 int productArray(int arr[], int n)
 {
-    // Escriba aquí su código
+    
+    int  product = 1;
+    for(int i = 0; i < n; i++)
+    {
+        product = product * arr[i];
+
+    }
+
+    return product;
 }
 
 // -------------------------------
@@ -79,5 +139,12 @@ int productArray(int arr[], int n)
 
 void calcSumAverage(int arr[], int n, int *sum, float *average)
 {
-    // Escriba aquí su código
+    *sum = 0;
+
+    for (int i = 0; i < n; i++) {
+        *sum += arr[i];
+    }
+
+    *average = (float)(*sum) / n;
+
 }
