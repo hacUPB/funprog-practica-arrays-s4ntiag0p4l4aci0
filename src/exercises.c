@@ -21,9 +21,10 @@ int findMax(int arr[], int n)
         if(arr[i] > max)
         {max = arr[i];}
 
-        return max;
+        
 
     }
+    return max;
 
 }
 
@@ -50,9 +51,10 @@ int findMin(int arr[], int n)
         if(arr[i] < min)
         {min = arr[i];}
 
-        return min;
+        
 
     }
+    return min;
 }
 
 int subtractArraysSum(int a[], int b[], int n)
