@@ -37,7 +37,7 @@ float calcAverage(int arr[], int n)
 
     }
 
-    int average = total/n;
+    float average = (float)total/n;
 
     return average;
     
