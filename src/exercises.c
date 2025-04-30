@@ -34,7 +34,7 @@ float calcAverage(int arr[], int n)
     float average;
     for(int i = 0; i < n; i++)
     {
-        total = total + arr[n];
+        total = total + arr[i];
 
     }
 
@@ -139,13 +139,13 @@ int productArray(int arr[], int n)
 // -------------------------------
 
 void calcSumAverage(int arr[], int n, int *sum, float *average)
-{   if(n==0){return 0;}
+{   
     *sum = 0;
 
     for (int i = 0; i < n; i++) {
         *sum += arr[i];
     }
-
-    *average = (float)(*sum) / n;
+    if(n!=0){
+    *average = (float)(*sum) / n;}
 
 }
