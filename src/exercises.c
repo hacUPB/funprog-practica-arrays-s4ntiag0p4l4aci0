@@ -14,7 +14,7 @@ int calcSum(int arr[], int n)
 }
 
 int findMax(int arr[], int n)
-{
+{   if(n==0){return 0;}
     int max = arr[0];
     for(int i = 0; i < n; i++)
     {
@@ -67,12 +67,12 @@ int sumFirstLast(int arr[], int n)
     }
     
     else {
-    printf("error");
+  
     return 0; }
 }
 
 int findMin(int arr[], int n)
-{
+{   if(n==0){return 0;}
     int min = arr[0];
 
     for(int i = 0; i < n; i++)
@@ -100,7 +100,7 @@ int subtractArraysSum(int a[], int b[], int n)
 }
 
 int mergeArraysSum(int a[], int n1, int b[], int n2)
-{
+{ if(n1==0||n2==0){return 0;}
     
     int c[n1 + n2];
     
@@ -122,7 +122,7 @@ int mergeArraysSum(int a[], int n1, int b[], int n2)
 
 int productArray(int arr[], int n)
 {
-    
+    if(n==0){return 0;}
     int  product = 1;
     for(int i = 0; i < n; i++)
     {
@@ -138,7 +138,7 @@ int productArray(int arr[], int n)
 // -------------------------------
 
 void calcSumAverage(int arr[], int n, int *sum, float *average)
-{
+{   if(n==0){return 0;}
     *sum = 0;
 
     for (int i = 0; i < n; i++) {
