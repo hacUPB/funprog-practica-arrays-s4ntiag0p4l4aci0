@@ -31,13 +31,14 @@ int findMax(int arr[], int n)
 float calcAverage(int arr[], int n)
 {   if(n==0){return 0;}
     int  total = 0;
+    float average;
     for(int i = 0; i < n; i++)
     {
         total = total + arr[n];
 
     }
 
-    float average = (float)total/n;
+    average = (float)total/n;
 
     return average;
     
@@ -100,7 +101,7 @@ int subtractArraysSum(int a[], int b[], int n)
 }
 
 int mergeArraysSum(int a[], int n1, int b[], int n2)
-{ if(n1==0||n2==0){return 0;}
+{ 
     
     int c[n1 + n2];
     
