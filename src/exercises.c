@@ -1,5 +1,5 @@
 #include "exercises.h"
-
+#include <stdio.h>
 // -------------------------------
 // Functions that return a single value
 // -------------------------------
