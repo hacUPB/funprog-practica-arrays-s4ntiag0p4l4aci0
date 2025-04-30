@@ -29,7 +29,7 @@ int findMax(int arr[], int n)
 }
 
 float calcAverage(int arr[], int n)
-{   if(n==0){return 0;}
+{   if(n==0){return 0.0;}
     int  total = 0;
     float average;
     for(int i = 0; i < n; i++)
